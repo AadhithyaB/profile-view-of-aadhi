@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile view</title>
+    <link rel="stylesheet" href="prcss.css">
+</head>
+<body>
+    <div class="profile hide" id="user">
+        <img src="Aasuk.jpeg" onclick="openinfo()">
+        <div class="name">
+            <h1>Aasuk </h1>
+            <p>Working as an <span>Full Stack Developer.</span></p>
+        </div>
+        <div class="arrow">
+            <button type="button" onclick="closeinfo()">&#8592 </button>
+        </div>
+    </div>
+    <script>
+           let user = document.getElementById("user");
+           function openinfo(){
+            user.classList.remove("hide")    
+           }
+           function closeinfo(){
+            user.classList.add("hide")    
+           }
+    </script>
+    
+</body>
+</html>
